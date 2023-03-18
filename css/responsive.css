@@ -46,9 +46,10 @@
 
     .both-header a.navbar-brand {
         width: 200px;
-        height: 65px;
+        height: 60px;
         left: -18px;
         padding: 10px 5px;
+        bottom: -28px;
     }
 
     .both-header a.navbar-brand img {
