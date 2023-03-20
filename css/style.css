@@ -404,6 +404,7 @@ section.both-header .header nav.nav-menu {
     .header .close-nav-menu,
     .header .open-nav-menu {
         display: flex;
+        margin-right: 35px;
     }
 }
 
@@ -1033,7 +1034,8 @@ section.team p.parah {
     -moz-perspective: 900px;
     -o-perspective: 900px;
     -ms-perspective: 900px;
-    perspective: 900px
+    perspective: 900px;
+    cursor: pointer;
 }
 
 .team-info {
@@ -1103,9 +1105,8 @@ section.team p.parah {
 }
 
 .team-info .team-info-back p {
-    text-align: justify;
     color: #fff;
-    padding: 10px 5px;
+    padding-top: 10px;
     margin: 0;
     font-size: 15px;
     border-top: 1px solid rgba(255, 255, 255, .5)
@@ -1121,7 +1122,6 @@ section.team p.parah {
     font-size: 9px;
     letter-spacing: 1px;
     padding-top: 4px;
-    font-family: 'Open Sans', Arial, sans-serif
 }
 
 .team-info p a:hover {
@@ -1165,7 +1165,33 @@ section.abt-content {
     padding: 100px 0 0 0;
 }
 
-h2.border-org {
+section.cards .team-item {
+    height: 200px;
+    cursor: pointer;
+}
+section.cards .team-item .team-info .team-info-front img {
+    width: 40px;
+}
+section.cards .team-item .team-info-front{
+    padding: 30px 30px 0px 30px;
+    border-bottom: 5px solid #FF5E14;
+    box-shadow: 0px 19px 33px rgb(111 109 113 / 13%);
+}
+section.cards .team-item .team-info-front h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 30px;
+    position: relative;
+}
+section.cards .team-info .team-info-back h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+section.cards .team-item .team-info-back{
+       border-bottom: 5px solid #00235A;
+}
+/* h2.border-org {
     border-right: 3px solid #FF5E14;
 }
 
@@ -1175,7 +1201,7 @@ section.secCard .org-border {
 
 section.secCard .item.org-border:hover {
     border-bottom: 5px solid #00122F;
-}
+} */
 
 /*===================/
     career page css

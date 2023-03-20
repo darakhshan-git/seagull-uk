@@ -129,6 +129,7 @@
     }
     .team-item{
         height: 350px;
+        margin-bottom: 20px;
     }
     section#projectFacts{
         transform: unset;
