@@ -338,7 +338,7 @@ section.both-header .header nav.nav-menu {
         height: 100%;
         top: 0;
         overflow-y: auto;
-        background-color: #222222;
+        background-color: #00235A;
         z-index: 1000;
         padding: 15px 0;
         transition: all 0.5s ease;
@@ -366,9 +366,9 @@ section.both-header .header nav.nav-menu {
         border-bottom: 1px solid #333333;
     }
 
-    .header .menu>.menu-item:first-child>a {
+    /* .header .menu>.menu-item:first-child>a {
         border-top: 1px solid #333333;
-    }
+    } */
 
     .header .menu>.menu-item>a .plus:before,
     .header .menu>.menu-item>a .plus:after {
@@ -453,8 +453,12 @@ section.banner_slider .banner-text p {
     width: 50%;
     padding: 10px 0;
     z-index: 10;
+    font-size: 20px;
 }
-
+section.banner_slider .carousel-control-next {
+    z-index: 99999 !important;
+}
+/* 
 section.banner_slider button {
     background: #FEFEFE;
     border: 2px solid #FEFEFE;
@@ -462,19 +466,16 @@ section.banner_slider button {
     width: 20%;
     padding: 10px;
     z-index: 10;
-}
+} */
 
 /*====== banner_slider css end ======*/
 
 
 /*====== about css start ======*/
 section.about {
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
-section.about .abtright {
-    padding-top: 20px;
-}
 
 section.abt-banner .bann-slide .banner-text button {
     width: 25%;
@@ -484,6 +485,14 @@ section.abt-banner .bann-slide .banner-text button {
 /*====== about css end ======*/
 
 /*====== cards css end ======*/
+section.cards p {
+    color: #000;
+}
+
+section.cards h2.maintitle {
+    border: unset;
+}
+
 section.cards .item {
     box-shadow: 0px 19px 33px rgb(111 109 113 / 13%);
     background: #FEFEFE;
@@ -569,7 +578,7 @@ section.service .service-text:after {
     background: #6FA9CB;
     left: -49%;
     top: -50px;
-    width: 900px;
+    width: 950px;
     height: 650px;
     z-index: -1;
     transform: skew(20deg);
@@ -581,10 +590,21 @@ section.service .service-text button {
     padding: 10px 20px;
     font-size: 15px;
     border: #00122F;
+    margin-top: 40px;
 }
 
 section.service .service-text button a {
     color: #FEFEFE;
+}
+section.service .service-text .serve{
+    display: flex;
+    align-items: flex-start;
+}
+section.service .service-text .serve img {
+    width: 50px;
+}
+section.service .service-text .title {
+    width: 70%;
 }
 
 section.service .service-text .title h6 {
@@ -602,7 +622,7 @@ section.service .service-text .title p {
 
 /*====== whyus css start ======*/
 section.whyus {
-    padding: 50px 0;
+    padding: 50px 0 0;
 }
 
 section.whyus h2.maintitle {
@@ -611,6 +631,7 @@ section.whyus h2.maintitle {
 
 section.whyus p {
     color: #000;
+    font-size: 20px;
 }
 
 section.whyus .whyright img {
@@ -619,7 +640,7 @@ section.whyus .whyright img {
 }
 
 section#projectFacts {
-    transform: translate(0px, -152px);
+    transform: translate(0px, -95px);
 }
 
 .projectFactsWrap {
@@ -631,7 +652,7 @@ section#projectFacts {
 
 .projectFactsWrap .item {
     background: #00235A;
-    padding: 30px;
+    padding: 20px 30px;
 }
 
 .projectFactsWrap .item p {
@@ -640,14 +661,38 @@ section#projectFacts {
 }
 
 .projectFactsWrap .item .number {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 600;
+}
+
+.projectFactsWrap .item .countsign {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projectFactsWrap .item .countsign p.sign {
+    font-size: 30px;
 }
 
 /*====== whyus css end ======*/
 
 
+section.index.form {
+    padding: 50px 0;
+    background: #00235A;
+}
 
+section.index.form h4 {
+    color: #fff !important;
+}
+
+section.index.form h2 {
+    color: #fff !important;
+}
+/* section.index.form button {
+    width: 30%;
+} */
 /*====== logo css start ======
  section.logo {
     background: #00122F;
@@ -744,7 +789,7 @@ section.blog_slider button svg {
 
 
 /*====== Network css end ======*/
-section.Network {
+/* section.Network {
     background: #00122F;
     margin-top: 50px;
     padding: 50px 0;
@@ -760,11 +805,29 @@ section.Network .netText {
     padding: 100px 50px 0 0;
 }
 
+section.Network .form {
+    background-color: #00235A;
+    padding: 30px 30px;
+    border-radius: 10px;
+}
+
+section.Network .form h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+section.Network .form form .icon {
+    transform: translate(215px, -39px);
+    color: #00235A;
+} */
+
+/* 
 section.Network .query-form {
     width: 100%;
-    background-color: #fff;
+    background-color: #00235A;
     box-shadow: 0px 19px 33px rgb(111 109 113 / 13%);
-    padding: 30px;
+    padding: 30px 40px;
     border-radius: 5px;
 }
 
@@ -778,49 +841,44 @@ section.Network .query-form form label {
     font-size: 16px;
     padding-bottom: 5px;
 }
-
-section.Network .query-form form .form-control {
-    background-color: #E8E8E8;
-    padding: 10px 20px;
+section.Network .query-form form .form-control{
+   background-color: #E8E8E8;
+   padding: 10px 20px;
 }
-
-section.Network .query-form form .form-control::placeholder {
+section.Network .query-form form .form-control::placeholder{
     font-size: 15px;
     color: #817979;
 }
-
 section.Network .query-form form .form-control:focus {
     box-shadow: 0 0 0 0.1rem rgb(0 18 47);
 }
-
-section.Network .query-form form button {
+section.Network .query-form form button{
     background: #6FA9CB;
     padding: 15px 30px;
     border: #6FA9CB;
     border-radius: 7px;
     width: 100%;
 }
-
-section.Network .query-form form button a {
+section.Network .query-form form button a{
     color: #00235A;
     font-size: 16px;
     font-weight: 600;
-}
-
+} */
 /*====== Network css end ======*/
 
 
 
 /*====== testimonial css start ======*/
 section.testimonial {
-    padding: 100px 0;
+    padding: 0px 0 50px;
+}
+
+section.testimonial h2.maintitle {
+    border: unset;
 }
 
 section.testimonial .item {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    padding: 10px;
 }
 
 section.testimonial .testi-item {
@@ -834,9 +892,11 @@ section.testimonial .testi-item span {
     display: inline-block;
 }
 
+
 section.testimonial .testi-item p.parah {
     color: #000;
-    padding: 20px 0px 50px 20px;
+    padding: 20px 20px 0 20px;
+    height: 170px;
 }
 
 section.testimonial .testi-item h6 {
@@ -948,7 +1008,7 @@ section.footer .foot-item p a {
 }
 
 section.footer .foot-item img {
-    width: 100%;
+    width: 70%;
 }
 
 section.copyright {
@@ -1002,12 +1062,10 @@ section.abt-banner .banner-text p {
     width: 80%;
     padding: 10px 0;
 }
-
 section.team {
     background: #00235A;
     padding: 50px 0;
 }
-
 section.team h2 {
     color: #FEFEFE;
 }
@@ -1024,7 +1082,7 @@ section.team p.parah {
 }
 
 
-.team-item {
+section.team .team-item {
     width: 100%;
     height: 400px;
     margin-bottom: 30px;
@@ -1038,7 +1096,7 @@ section.team p.parah {
     cursor: pointer;
 }
 
-.team-info {
+section.team .team-info {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1049,23 +1107,23 @@ section.team p.parah {
     transform-style: preserve-3d
 }
 
-.team-item .team-info-front img {
+section.team .team-item .team-info-front img {
     width: 100%;
 }
 
-.team-info .text-info {
+section.team .team-info .text-info {
     padding: 20px 30px;
     background: #fff;
 }
 
-.team-info .text-info h3 {
+section.team .team-info .text-info h3 {
     text-transform: uppercase;
     font-size: 17px;
     font-weight: 600;
     text-align: left;
 }
 
-.team-info>div {
+section.team .team-info>div {
     display: block;
     position: absolute;
     width: 100%;
@@ -1083,11 +1141,11 @@ section.team p.parah {
     transform-origin: 50% 0
 }
 
-.team-info .team-info-front {
-    /* box-shadow: inset 0 0 0 2px #1bba9e */
+section.team .team-info .team-info-front {
+   border: unset;
 }
 
-.team-info .team-info-back {
+section.team .team-info .team-info-back {
     -webkit-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
     -moz-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
     -o-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
@@ -1098,13 +1156,13 @@ section.team p.parah {
     padding: 30px;
 }
 
-.team-info .team-info-back h3 {
+section.team .team-info .team-info-back h3 {
     color: #fff;
     padding-bottom: 20px;
     text-align: center;
 }
 
-.team-info .team-info-back p {
+section.team .team-info .team-info-back p {
     color: #fff;
     padding-top: 10px;
     margin: 0;
@@ -1112,7 +1170,7 @@ section.team p.parah {
     border-top: 1px solid rgba(255, 255, 255, .5)
 }
 
-.team-info p a {
+section.team .team-info p a {
     display: block;
     color: #fff;
     color: rgba(255, 255, 255, .7);
@@ -1124,12 +1182,12 @@ section.team p.parah {
     padding-top: 4px;
 }
 
-.team-info p a:hover {
+section.team .team-info p a:hover {
     color: #fff222;
     color: rgba(255, 242, 34, .8)
 }
 
-.team-item:hover .team-info-front {
+section.team .team-item:hover .team-info-front {
     -webkit-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
     -moz-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
     -o-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
@@ -1138,13 +1196,14 @@ section.team p.parah {
     opacity: 0
 }
 
-.team-item:hover .team-info-back {
+section.team .team-item:hover .team-info-back {
     -webkit-transform: rotate3d(1, 0, 0, 0deg);
     -moz-transform: rotate3d(1, 0, 0, 0deg);
     -o-transform: rotate3d(1, 0, 0, 0deg);
     -ms-transform: rotate3d(1, 0, 0, 0deg);
     transform: rotate3d(1, 0, 0, 0deg);
-    opacity: 1
+    opacity: 1;
+    border: unset;
 }
 
 section.team button {
@@ -1160,36 +1219,151 @@ section.team button {
 section.team button a {
     color: #fff;
 }
-
 section.abt-content {
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
-section.cards .team-item {
+.service_tile h2{
+    border: unset;
+}
+.service_tile .team-item {
+    width: 100%;
     height: 200px;
+    margin-bottom: 30px;
+    position: relative;
+    cursor: default;
+    -webkit-perspective: 900px;
+    -moz-perspective: 900px;
+    -o-perspective: 900px;
+    -ms-perspective: 900px;
+    perspective: 900px;
     cursor: pointer;
 }
-section.cards .team-item .team-info .team-info-front img {
+
+.service_tile .team-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+
+.service_tile .team-item .team-info-front img {
     width: 40px;
 }
-section.cards .team-item .team-info-front{
-    padding: 30px 30px 0px 30px;
-    border-bottom: 5px solid #FF5E14;
-    box-shadow: 0px 19px 33px rgb(111 109 113 / 13%);
+
+.service_tile .team-info .text-info {
+    padding: 20px 30px;
+    background: #fff;
 }
-section.cards .team-item .team-info-front h3{
+
+.service_tile .team-item .team-info-front h3 {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
     padding-top: 30px;
     position: relative;
 }
-section.cards .team-info .team-info-back h3 {
-    padding-bottom: 10px;
-    font-size: 20px;
+
+.service_tile .team-info>div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    transition: all .4s linear;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0
 }
-section.cards .team-item .team-info-back{
-       border-bottom: 5px solid #00235A;
+
+.service_tile .team-info .team-info-front {
+    padding: 30px 30px 0px 30px;
+    border-bottom: 5px solid #6FA9CB;
+    box-shadow: 0px 19px 33px rgb(111 109 113 / 13%);
+}
+
+.service_tile .team-info .team-info-back {
+    -webkit-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    -moz-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    -o-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    -ms-transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    transform: translate3d(0, 0, -220px) rotate3d(1, 0, 0, 90deg);
+    background: #00235A;
+    opacity: 0;
+    padding: 20px;
+    border-bottom: 5px solid #285785;
+}
+
+.service_tile .team-info .team-info-back h3 {
+    color: #fff;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.service_tile .team-info .team-info-back p {
+    color: #fff;
+    padding: 10px 0px 0px;
+    margin: 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(255, 255, 255, .5)
+}
+
+.service_tile .team-info p a {
+    display: block;
+    color: #fff;
+    color: rgba(255, 255, 255, .7);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding-top: 4px;
+}
+
+.service_tile .team-info p a:hover {
+    color: #fff222;
+    color: rgba(255, 242, 34, .8)
+}
+
+.service_tile .team-item:hover .team-info-front {
+    -webkit-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    -moz-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    -o-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    -ms-transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    transform: translate3d(0, 280px, 0) rotate3d(1, 0, 0, -90deg);
+    opacity: 0
+}
+
+.service_tile .team-item:hover .team-info-back {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+    -moz-transform: rotate3d(1, 0, 0, 0deg);
+    -o-transform: rotate3d(1, 0, 0, 0deg);
+    -ms-transform: rotate3d(1, 0, 0, 0deg);
+    transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1
+}
+section.about .abtright p{
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
+}
+section.about .abtleft h2 {
+    display: table-cell;
+    vertical-align: middle;
+    width: 440px;
+    /* width: 100%; */
 }
 /* h2.border-org {
     border-right: 3px solid #FF5E14;
@@ -1302,7 +1476,9 @@ section.blog .blog-card {
     margin-bottom: 50px;
     cursor: pointer;
 }
-
+section.blog .blog-card.top_blog {
+    display: block;
+}
 section.blog .blog-card img {
     width: 100%;
     height: 250px;
@@ -1318,7 +1494,9 @@ section.blog .blog-card .author {
     gap: 20px;
     padding-top: 10px;
 }
-
+section.blog .blog-card.top_blog .author p {
+    width: 80%;
+}
 section.blog .blog-card .author p {
     width: 70%;
 }
@@ -1343,7 +1521,7 @@ section.blog .blog-card .author svg {
 
 .blog-paginatn .pagination .page-item.active .page-link {
     background-color: #fff;
-    color: #FF5E14;
+    color: #00235A;
 }
 
 .blog-paginatn nav ul li .page-link {
@@ -1360,7 +1538,7 @@ section.blog .blog-card .author svg {
 }
 
 .blog-paginatn nav ul li a.button {
-    background: #FF5E14;
+    background: #00235A;
     color: #FEFEFE;
     border-radius: unset !important;
     padding: 10px 30px;
@@ -1395,11 +1573,107 @@ section.blog-detail .detail-content p.secparah {
 /*===================/
     service page css
  /=================*/
+ 
+ section.serv-banner{
+    max-height: 100%;
+    height: 500px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+ }
 section.service-page {
     padding-bottom: 100px;
 }
 
-section.service-page .top-content {
+section.service_card .item {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+    padding: 30px;
+    height: 100%;
+}
+section.service_card .item img {
+    width: 50px;
+}
+section.service_card .item:hover img{
+    filter: invert(60%) sepia(69%) saturate(4%) hue-rotate(26deg) brightness(209%) contrast(109%);
+}
+
+
+section.service_card .item:hover{
+    transition: background-color 0.3s ease-out,box-shadow 0.3s ease-out;
+    /* box-shadow: 0 5px 30px rgb(41 72 208); */
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+}
+section.service_card .item h3 {
+    color: #00235A;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 20px 0 10px;
+}
+
+section.service_card .item .link_text {
+    position: relative;
+    margin-right: 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: -110px;
+    visibility: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    -webkit-transition: visibility 0.4s ease, margin-right 0.4s ease-out, text-indent 0.5s ease-out, opacity 0.4s ease;
+    -ms-transition: visibility 0.4s ease, margin-right 0.4s ease-out, text-indent 0.5s ease-out, opacity 0.4s ease;
+    transition: visibility 0.4s ease, margin-right 0.4s ease-out, text-indent 0.5s ease-out, opacity 0.4s ease;
+    will-change: visibility, margin-right, text-indent, opacity;
+}
+
+section.service_card .item .link_icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+section.service_card .item:hover .link_text {
+    text-indent: 0px;
+    visibility: visible;
+    opacity: 1;
+    color: #fff;
+}
+
+section.service_card .item:hover .link_icon {
+    color: #fff;
+}
+
+/* section.service_card .item .link_icon:before {
+    font-size: 11px;
+    line-height: inherit;
+    font-weight: 400;
+    font-style: inherit;
+    content: '\f061';
+    display: inline-block;
+    vertical-align: top;
+    color: currentColor;
+} */
+section.service_card .item:hover {
+    background-color: #00235A;
+}
+
+section.service_card .item:hover h3 {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+section.service_card .item:hover p {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+/* section.service-page .top-content {
     text-align: center;
     padding: 50px 0;
 }
@@ -1437,47 +1711,56 @@ section.service-page .top-content ul li {
 section.service-page ul.org-list li {
     color: #FF5E14;
     font-size: 13px;
-}
+} */
 
 
 /*===================/
     contact us page css
  /=================*/
 section.form {
+    padding: 50px 0px;
+
+}
+section.form{
     padding: 50px 0;
 }
 
-section.form form .form-control {
+.form form .form-control {
     background: #F5F6FB;
     border: #F5F6FB;
     padding: 15px 20px;
 }
 
-section.form form .form-control:focus {
-    box-shadow: 0 0 0 0.1rem rgb(0 35 90);
+.form form .form-control:focus {
+    box-shadow: 0 0 0 0.1rem rgb(111 169 203);
 }
 
-section.form form .form-control::placeholder {
+.form form .form-control::placeholder {
     color: #6F6D71;
     font-size: 15px;
 }
 
-section.form form .form-control:focus::placeholder {
+.form form .form-control:focus::placeholder {
     color: #00235A;
 }
 
 section.form form .icon {
-    transform: translate(400px, -39px);
+    transform: translate(380px, -39px);
     color: #00235A;
 }
 
-section.form button {
-    background: #00235A;
-    border: #00235A;
-    color: #FEFEFE;
+.form button {
+    background: #6FA9CB;
+    border: #6FA9CB;
+    color: #00235A;
     padding: 15px 50px;
-    margin: 50px auto;
+    margin: 30px auto 0;
     display: block;
+    width: 30%;
+}
+
+.form button a {
+    color: #00235A;
 }
 
 section.map-location {
@@ -1511,11 +1794,13 @@ section.map-location .add_detail {
 
 section.map-location .add_detail .block {
     background-color: #00235A;
-    padding: 40px 20px;
+    padding: 20px;
     text-align: center;
 }
-
-section.map-location .add_detail .block h6 {
+section.map-location .add_detail .block h6{
+    margin: 0;
+}
+section.map-location .add_detail .block h6 a{
     padding-bottom: 15px;
     color: #AFE0FC;
     font-size: 20px;

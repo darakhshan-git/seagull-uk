@@ -1,13 +1,16 @@
 /*********************************  Responsive Media ***************************************/
 @media (max-width: 768px) {
-    section.both-header .header nav.nav-menu{
+
+    section.both-header .header nav.nav-menu {
         width: 280px;
         display: unset;
         justify-content: unset;
     }
-    .both-header .tophead{
+
+    .both-header .tophead {
         display: none;
     }
+
     /* index page */
     section.header .tophead ul {
         gap: 20px;
@@ -27,6 +30,23 @@
         width: 150px;
         height: 60px;
         left: -10px;
+    }
+
+    section.homeslide {
+        overflow-x: hidden;
+        overflow-y: clip;
+    }
+
+    section.banner_slider .bann-slide {
+        background-position: 65% 50% !important;
+    }
+
+    section.banner_slider .carousel-control-next {
+        right: -70px;
+    }
+
+    section.banner_slider .carousel-control-prev {
+        left: -70px;
     }
 
     .header-main {
@@ -58,7 +78,7 @@
     }
 
     .both-header button.signin {
-        display: none;
+        margin: 20px 15px 0;
     }
 
     h2.maintitle {
@@ -66,12 +86,12 @@
     }
 
     section.banner_slider .banner-text h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     section.banner_slider .banner-text {
         width: 100%;
-        padding: 130px 30px;
+        padding: 170px 0px 0 20px;
     }
 
     section.banner_slider .bann-slide {
@@ -102,6 +122,22 @@
         margin-bottom: 50px;
     }
 
+    section.serv-banner {
+        background-position: 30% 0% !important;
+    }
+
+    section.service {
+        background: #00235A;
+    }
+
+    section.service .service-text {
+        background: #00235A;
+    }
+
+    section.service .service-text:after {
+        background: #00235A;
+    }
+
     section.service {
         height: 100%;
         margin-top: 0px;
@@ -127,20 +163,21 @@
     section.service .container {
         padding: 0;
     }
-    .team-item{
-        height: 350px;
-        margin-bottom: 20px;
+
+    .projectFactsWrap .item {
+        width: 200px;
     }
-    section#projectFacts{
-        transform: unset;
+
+    .projectFactsWrap .item.right {
+        margin: 0 0 auto auto;
     }
-    .projectFactsWrap {
-        display: grid;
-        grid-template-columns: unset;
-        grid-column-gap: 21px;
-        grid-row-gap: 10px;
+
+    section.cards.secCard {
+        margin-top: 20px;
     }
-    /* section.logo .logo-flex img {
+
+    /* 
+    section.logo .logo-flex img {
         width: 130px;
     }
 
@@ -165,8 +202,62 @@
     section.blog_slider button.owl-next{
         transform: translate(0px, -220px);
     } */
+    section.whyus p {
+        font-size: 15px;
+    }
+
+    section#projectFacts {
+        transform: unset;
+    }
+
+    .projectFactsWrap {
+        display: grid;
+        grid-template-columns: unset;
+        grid-column-gap: 21px;
+        grid-row-gap: 10px;
+    }
+
+    section.cards.secCard .team-item.right {
+        text-align: right;
+    }
+
     section.about {
         padding: 30px 0;
+    }
+
+    section.about .row.reverse {
+        flex-direction: column-reverse;
+    }
+
+    section.about .row.reverse h2 {
+        margin-left: 0px !important;
+    }
+
+    section.about.mob .abtleft h2 {
+        border: unset !important;
+        position: relative;
+        text-align: center;
+        padding: 0 !important;
+    }
+    section.about.mob .abtleft h2{
+        vertical-align: baseline;
+        height: 50px !important;
+    }
+    section.about.mob .abtright {
+        padding: 0px !important;
+    }
+    section.about.mob .abtleft h2:after {
+        content: "";
+        position: absolute;
+        width: 90px;
+        height: 2px;
+        background: #00235A;
+        top: 60%;
+        left: 38%;
+    }
+
+    section.about.mob .abtright p {
+        text-align: center !important;
     }
 
     section.secCard .item {
@@ -179,7 +270,7 @@
     }
 
     section.Network {
-        padding-bottom: 50px;
+        padding-top: 0;
     }
 
     section.Network .map {
@@ -198,10 +289,6 @@
         padding: 50px 0;
     }
 
-    section.testimonial .testi-item {
-        gap: 15px;
-        padding: 50px 15px;
-    }
 
     section.testimonial .testi-item img {
         width: 100px;
@@ -254,9 +341,10 @@
         padding: 50px 0 0 0;
     }
 
+    /* 
     section.abt-content.pb-5 {
         padding-bottom: 0 !important;
-    }
+    } */
 
     /*  blog page */
     section.blog {
@@ -350,20 +438,25 @@
         justify-content: space-between;
         display: block !important;
     }
+
     .detail-page .heading .left h2 {
         font-size: 20px;
     }
-    .detail-page .heading .right{
+
+    .detail-page .heading .right {
         padding-top: 30px;
     }
-    .detail-page .leftside h2{
+
+    .detail-page .leftside h2 {
         font-size: 20px;
     }
+
     .detail-page .profile img.logo {
         transform: translate(40px, -40px);
         width: 70px;
         height: 70px;
     }
+
     .detail-page .heading .right button svg {
         font-size: 13px;
         margin-left: 5px;
@@ -375,11 +468,27 @@
         padding-bottom: 0px;
     }
 
-    section.form form .icon {
-        transform: translate(330px, -39px);
-        color: #FF5E14;
+    section.map-location .logo_add img {
+        width: 80px;
     }
 
+    section.form form .icon {
+        transform: translate(320px, -39px);
+    }
+
+    section.map-location .add_detail {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 0px;
+    }
+
+    section.form h2 {
+        font-size: 18px;
+    }
+
+    .form button {
+        width: unset;
+    }
 
 
 }
